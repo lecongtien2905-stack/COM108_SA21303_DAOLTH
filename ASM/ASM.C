@@ -1,11 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
-    
+    int choice;
     do{
         printf("wellcome to congtien asm project/n");
-      printf("|=====================MENU=====================|\n");
-      int choice;
+        printf("|=====================MENU=====================|\n");
          printf("1.kiem tra so nguyen\n");
          printf("2.tim uoc so chung va boi so chung cua 2 so nguyen\n");
          printf("3.tinh tien cho quan karaoke\n");
@@ -54,10 +53,10 @@ int main(){
             printf("thoát chương trình\n");
             exit(0);
             default:
-            printf("lựa chọn của bạn không hợp lệ vui lòng chọn lại\n");
+              printf("lựa chọn của bạn không hợp lệ vui lòng chọn lại\n");
+              break;
         }
      
-    }while(1);
-     
+    }while(choice !=0);
   return 0;
 }
